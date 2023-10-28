@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{lineno}
+\usepackage{prelude}
+\usepackage{cleveref}
+% \linenumbers
+
+\begin{document}
+\title{Statement of Purpose}
+\maketitle
+
+Hello, this is Nikola Tesla.
+
+Include a general description of your research interests and your experience,
+make absolutely sure it's school-independent.
+
+Here's my awesome publication that you want to take a look:
+\begin{itemize}
+  \item \fullcite{Example}
+\end{itemize}
+
+\ifdefined\includePenn
+\section*{Why Penn}
+Talk about why UPenn is a good fit for you.
+\fi
+
+\ifdefined\includeUiuc
+\section*{Why UIUC}
+Talk about why UIUC is a good fit for you.
+\fi
+
+\ifdefined\includeUofT
+\section*{Why Toronto}
+Talk about why U of Toronto is a good fit for you.
+\fi
+
+\newpage
+\printbibliography
+\appendix
+In case you have an Appendix, put it here.
+\end{document}
