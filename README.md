@@ -9,6 +9,20 @@ You don't need any knowledge on Perl to use this template.
 You are called "Nikola Tesla" in the template,
 and you're responsible to change it to your name.
 
+## Motivation
+
+It is pure pain to write $n$ different documents for $n$ schools,
+where:
+
+- Most of the contents are the same,
+- Every document has a small portion of school-specific content,
+- Whenever you want to make some small changes,
+  you have to change all $n$ documents.
+
+This template is designed to solve this problem,
+and you can even have a document contains all school-specific content,
+so you can send it to your senpai for review.
+
 ## Build and run
 
 Go to the `src` directory, and run `perl build-sop.pl` to compile the documents.
@@ -24,6 +38,9 @@ src/sop-all.pdf
 src/sop-null.pdf
 ```
 
+As the name suggests, `sop-null.pdf` contains no school-specific content,
+and `sop-all.pdf` contains all school-specific content.
+
 In `sop.tex`, you can use:
 
 ```tex
@@ -33,9 +50,6 @@ Replace with UPenn-specific content here
 ```
 
 This will only appear in `sop-all.pdf` and `sop-penn.pdf`.
-
-As the name suggests, `sop-null.pdf` contains no school-specific content,
-and `sop-all.pdf` contains all school-specific content.
 
 ## Adding a new school
 

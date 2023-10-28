@@ -41,9 +41,6 @@
 *.pdfsync
 
 ## Build tool directories for auxiliary files
-# latexrun
-latex.out/
-
 ## Auxiliary and intermediate files from other packages:
 # algorithms
 *.alg
@@ -54,12 +51,6 @@ acs-*.bib
 
 # amsthm
 *.thm
-
-# beamer
-*.nav
-*.pre
-*.snm
-*.vrb
 
 # changes
 *.soc
