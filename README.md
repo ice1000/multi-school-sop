@@ -1,5 +1,5 @@
 # Multi-school SoP
-A latex template for writing statement-of-purpose for many schools at the same time.
+A $\LaTeX$ template for writing statement-of-purpose for many schools at the same time.
 
 Note that this template is tested with a Linux system (including WSL) with TeX Live.
 It needs Perl 5 (preinstalled on most Linux distributions) and `latexmk` to work.
@@ -8,6 +8,14 @@ You don't need any knowledge on Perl to use this template.
 
 You are called "Nikola Tesla" in the template,
 and you're responsible to change it to your name.
+
+The template has the following pre-built features: 
+
+- Use `\fullcite` to include a citation in the body of the document,
+- Palatino font,
+- Based on `article` but has smaller page margins.
+
+You are encouraged to change it to fit your own preferences.
 
 ## Motivation
 
@@ -20,8 +28,11 @@ where:
   you have to change all $n$ documents.
 
 This template is designed to solve this problem,
-and you can even have a document contains all school-specific content,
-so you can send it to your senpai for review.
+and you can even have a PDF contains all school-specific content
+(so you can send it to your senpai for review)
+and a PDF with no school-specific content.
+
+There will be $n+2$ PDFs generated.
 
 ## Build and run
 
