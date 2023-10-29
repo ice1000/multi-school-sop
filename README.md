@@ -2,7 +2,7 @@
 A $\LaTeX$ template for writing statement-of-purpose for many schools at the same time.
 
 Note that this template is tested with a Linux system (including WSL) with TeX Live.
-It needs Perl 5 (preinstalled on most Linux distributions) and `latexmk` to work.
+It needs Perl 5 (preinstalled on most Linux distributions) and `pdflatex` to work.
 
 You don't need any knowledge on Perl to use this template.
 
@@ -29,7 +29,7 @@ where:
 
 This template is designed to solve this problem,
 and you can even have a PDF contains all school-specific content
-(so you can send it to your senpai for review)
+(so you can send it to your senpais for review)
 and a PDF with no school-specific content.
 
 There will be $n+2$ PDFs generated.
@@ -64,8 +64,8 @@ This will only appear in `sop-all.pdf` and `sop-penn.pdf`.
 
 ## Adding a new school
 
-You probably want to change it, here's how. Open `build-sop.pl`,
-and you'll see this line:
+You probably want to add more schools, here's how.
+Open `build-sop.pl`, and you'll see this line:
 
 ```perl
 my @schools = qw/Penn Uiuc UofT/;
@@ -80,3 +80,10 @@ my @schools = qw/Penn Uiuc UofT CMU/;
 
 And now you can use `\ifdefined\includeCMU` in `sop.tex`,
 and it will only appear in `sop-all.pdf` and `sop-cmu.pdf`.
+
+Note that the bibliography is shared among all schools,
+and it will be compiled from the first element in your `@schools` array.
+This means you don't want to have citations in your school-specific content,
+or it will mess up the bibliography generation.
+This is a limitation of the current implementation,
+but it is good for compilation speed.

@@ -29,7 +29,7 @@ sub pdflatex {
   moveFile(lc $school);
 }
 
-pdflatex1 'Penn';
+pdflatex1 $schools[0];
 system 'biber out/sop';
 pdflatex $_ for @schools;
 
