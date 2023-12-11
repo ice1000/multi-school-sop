@@ -12,7 +12,7 @@ and you're responsible to change it to your name.
 The template has the following pre-built features: 
 
 - Use `\fullcite` to include a citation in the body of the document,
-- Palatino font,
+- My favorite font,
 - Based on `article` but has smaller page margins.
 
 You are encouraged to change it to fit your own preferences.
